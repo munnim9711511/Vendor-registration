@@ -7,6 +7,7 @@
   {{script("/js/app.js")}}
   {{script("/js/angular.min.js")}}
   {{script("/js/materialize.min.js")}}
+  {{script("/js/script.js")}}
 
   {{css("/css/materialize.min.css")}}
 
@@ -18,95 +19,76 @@
     {{ csrfField() }}
     <div class="row">
       <div class="input-field  col m4">
-        <input type="text" name="" value="">
+        <input type="text" name="companyName" value="">
         <label for="">Name of the company</label>
       </div>
     </div>
     <div class="row">
       <div class="input-field  col m4">
-        <input type="text" name="" value="">
+        <input type="text" name="companyRegistration" value="">
         <label for="">Comapny registration</label>
       </div>
     </div>
     <div class="row">
       <div class="input-field  col m4">
-        <input type="text" name="" value="">
+        <input type="text" name="email" value="">
         <label for="">Email</label>
       </div>
     </div>
     <div class="row">
       <div class="input-field  col m4">
-        <input type="text" name="" value="">
+        <input type="text" name="contactTel" value="">
         <label for="">Conatct (Tel)</label>
       </div>
     </div>
     <div class="row">
       <div class="input-field  col m4">
-        <input type="text" name="" value="">
+        <input type="text" name="contactMobile" value="">
         <label for="">Conatct (Mobile)</label>
       </div>
     </div>
     <div class="row">
       <div class="input-field  col m4">
-        <input type="text" name="" value="">
+        <input type="text" name="address" value="">
         <label for="">Address</label>
       </div>
       <div class="input-field  col m4">
-        <input type="text" name="" value="">
+        <input type="text" name="state" value="">
         <label for="">State</label>
       </div>
     </div>
     <div class="row">
       <div class="input-field  col m4">
-        <input type="text" name="" value="">
+        <input type="text" name="city" value="">
         <label for="">City</label>
       </div>
       <div class="input-field  col m4">
-        <input type="text" name="" value="">
+        <input type="text" name="zipCode" value="">
         <label for="">Zip code</label>
       </div>
     </div>
     <div class="row">
-      <div class=" col m4">
-                            <label for="">Type of bussiness</label>
-                      <p>
-                         <input type="checkbox" id="test5" />
-                         <label for="test5">Food</label>
-                       </p>
-                       <p>
-                          <input type="checkbox" id="test2" />
-                          <label for="test2">Cloths</label>
-                        </p>
-                        <p>
-                           <input type="checkbox" id="test6" />
-                           <label for="test6">Furnithur</label>
-                         </p>
-                         <p>
-                            <input type="checkbox" id="test9" />
-                            <label for="test9">Collector</label>
-                          </p>
-                          <p>
-                             <input type="checkbox" id="test10" />
-                             <label for="test10">Construction</label>
-                           </p>
-                           <p>
-                              <input type="checkbox" id="test11" />
-                              <label for="test11">Vehicle/Vessel</label>
-                            </p>
-                            <p>
-                               <input type="checkbox" id="test12" />
-                               <label for="test12">Marine products</label>
-                             </p>
-                             <p>
-                                <input type="checkbox" id="test13" />
-                                <label for="test13">Others</label>
-                              </p>
-      </div>
+      <div class="input-field col m7">
+       <select multiple name="typeBussiness">
+         <option value="" disabled selected>Choose your option</option>
+         <option value="General">General</option>
+         <option value="Food">Food</option>
+         <option value="Clothing">Clothing</option>
+         <option value="Furnitur">Furnitur</option>
+          <option value="Collector / products">Collector / products</option>
+          <option value="Construction">Construction</option>
+          <option value="Vehicle / Vessels">Vehicle / Vessels</option>
+          <option value="Marine products">Marine products</option>
+       </select>
+       <label>Type of bussiness</label>
+     </div>
+
 
     </div>
     <div class="row">
       <div class="  col m4">
         <label for="test10">Company profile</label>
+        <br>
       <input type="file" name="" value="">
 
       </div>
@@ -115,6 +97,7 @@
     <div class="row">
       <div class="  col m4">
         <label for="test10">Authorization letter</label>
+        <br>
       <input type="file" name="" value="">
 
       </div>
@@ -123,6 +106,7 @@
         <div class="row">
           <div class="  col m4">
             <label for="test10">Company registration</label>
+            <br>
           <input type="file" name="" value="">
 
           </div>
@@ -130,6 +114,7 @@
         <div class="row">
           <div class="  col m4">
             <label for="test10">GST registration</label>
+            <br>
           <input type="file" name="" value="">
 
           </div>
@@ -137,6 +122,7 @@
         <div class="row">
           <div class="  col m4">
             <label for="test10">Company profile</label>
+            <br>
           <input type="file" name="" value="">
 
           </div>
@@ -144,6 +130,7 @@
         <div class="row">
           <div class="  col m4">
             <label for="test10">shareholder ID's</label>
+            <br>
           <input type="file" name="" value="">
 
           </div>
